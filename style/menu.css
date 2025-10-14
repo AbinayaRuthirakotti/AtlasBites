@@ -1,0 +1,189 @@
+/* style/menu.css - PROFESSIONAL REDESIGN - TEAL/AQUA COLOR SCHEME */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa; 
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+/* --- Header & Navigation --- */
+.header-nav {
+    background-color: #1f4287;
+    padding: 15px 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #00BCD4; /* Teal/Aqua Accent Color */
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #00BCD4; /* Teal/Aqua Accent Color */
+}
+
+/* --- Main Content Title --- */
+h1 { 
+    text-align: center; 
+    padding: 30px 20px; 
+    color: #1f4287; 
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+/* --- Menu Grid Layout --- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 40px;
+    padding: 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px; 
+    }
+}
+
+.menu-card {
+    background: white;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* --- Food Image Styling --- */
+.food-image {
+    width: 100%;
+    height: 180px; /* Fixed height for consistent card size */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    display: block; 
+    border-bottom: 1px solid #eee;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.menu-card h3 {
+    margin-top: 0;
+    color: #1f4287;
+    font-size: 1.5em;
+}
+
+.menu-card p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 15px; 
+}
+
+.menu-card form {
+    margin-top: 15px;
+}
+
+/* --- Quantity Selector Styling --- */
+.quantity-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; 
+}
+
+.quantity-selector label {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 500;
+}
+
+.quantity-selector input[type="number"] {
+    width: 60px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    -moz-appearance: textfield; 
+}
+
+.quantity-selector input[type="number"]::-webkit-outer-spin-button,
+.quantity-selector input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.menu-card button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background: #28a745; 
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu-card button:hover { 
+    background: #1e7e34; 
+}
+
+/* --- Order History Table Styling (Included for completeness) --- */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+th {
+    background-color: #1f4287;
+    color: white;
+    font-weight: 500;
+}
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+.back-link {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #00BCD4; /* Teal/Aqua Accent Color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.back-link:hover {
+    background-color: #0097A7;
+}

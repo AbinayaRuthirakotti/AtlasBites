@@ -1,0 +1,9 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore system files
+*.log
+*.DS_Store
+
+# Ignore the orders file (so personal data doesn't go online)
+data/orders.txt
